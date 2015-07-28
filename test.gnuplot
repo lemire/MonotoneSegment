@@ -1,0 +1,1 @@
+plot "test.data" u 1:2  every :::0::0 with lines ti "original", "test.data" u 1:2  every :::1::1 with lines ti "piecewise monotone (scale = 15)"
