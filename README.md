@@ -10,6 +10,12 @@ Perrine Ruer, Charles Gouin-Vallerand, Le Zhang, Daniel Lemire, and Evelyne F.  
 An analysis tool for the contextual information from field experiments on driving fatigue,
 CONTEXT 2015, 2015.
 
+
+Java version
+======
+
+
+
 Usage
 ======
 
@@ -18,14 +24,14 @@ and adapt it to your own purpose.
 
 
 Assuming you have a mac, you can run it in a command line...
-
+```bash
 sudo ln -s /System/Library/Frameworks/JavaScriptCore.framework/Versions/Current/Resources/jsc /bin/jsc
-
 chmod +x samplescript.js
-
 cat VehicleRunInfo.json | jsc samplescript.js 
+```
 
 If you have gnuplot installed:
 
-
+```bash
 cat VehicleRunInfo.json | jsc samplescript.js > test.data && gnuplot test.gnuplot
+```
